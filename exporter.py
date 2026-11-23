@@ -10,9 +10,6 @@ from word_template import export_pdf as export_word_template
 FONT_DIR = Path(__file__).parent / 'assets' / 'fonts'
 
 
-def clean_text(value):
-    return str(value or '').replace('\t', '    ').strip()
-
 
 
 

@@ -135,8 +135,7 @@ if st.sidebar.button('Clear Data', key='clear_data'):
 if st.session_state.get('show_clear_confirmation'):
     confirm_clear()
 
-def next_step(step):
-    st.session_state.workspace_step = step
+
 
 st.divider()
 if workspace != 'Preview & export':

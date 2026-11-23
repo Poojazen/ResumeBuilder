@@ -14,12 +14,6 @@ def clean_text(value):
     return str(value or '').replace('\t', '    ').strip()
 
 
-class ResumePDF(FPDF):
-    def footer(self):
-        self.set_y(-13)
-        self.set_font('Resume', '', 8)
-        self.set_text_color(120, 120, 120)
-        self.cell(self.epw, 6, f'Page {self.page_no()}', align='C')
 
 
 def generate_resume_pdf(personal_info, education, experience, font_color=None, **extra):

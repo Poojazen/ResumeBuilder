@@ -158,10 +158,3 @@ if workspace == 'Preview & export' and st.button('Generate PDF', type='primary')
             st.success(f'Your resume PDF is ready ({selected_theme}).')
         except (ValueError, OSError) as error:
             st.error(f'PDF generation failed: {error}')
-if 'generated_pdf' in st.session_state:
-    pdf_bytes, saved_data, saved_theme = st.session_state.generated_pdf
-    if (saved_data, saved_theme) == (json_data, selected_theme):
-        if workspace == 'Preview & export':
-            st.download_button('Download Resume as PDF', pdf_bytes, 'resume.pdf', 'application/pdf', key='download_resume_pdf')
-    else:
-        st.session_state.pop('generated_pdf', None)

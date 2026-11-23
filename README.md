@@ -153,13 +153,8 @@ The service sends bounded batches and shows progress; a large resume may require
 ## Streamlined workflow
 
 1. **Edit resume**: import a resume or JSON profile, choose a section from the section selector, and enter or update your information. AI controls no longer clutter editing forms.
-<<<<<<< HEAD
-2. **AI**: all provider/model settings, shared tone/length controls, whole-resume polishing, summary generation, individual field rewrites, quality checks, and Job Match Analyzer live here. Suggestions always require consent and review. Provider/model and tone/length selections survive navigation.
-3. **Preview & export**: choose the supplied Word layout or a built-in style, select a coordinated color theme, hide sections, and generate your PDF. Template and theme choices are included in JSON profiles.
-=======
 2. **AI**: NVIDIA model settings, shared tone/length controls, whole-resume polishing, summary generation, individual field rewrites, quality checks, and Job Match Analyzer live here. Suggestions always require consent and review. Model and tone/length selections survive navigation.
-3. **Preview & export**: choose one of five resume styles, set PDF text colour, hide/reorder sections, choose student emphasis, and generate your PDF. Template choices affect both preview and PDF and are included in JSON profiles.
->>>>>>> 1fe7dd2 (Use NVIDIA NIM with model fallback and structured batch responses)
+3. **Preview & export**: choose the supplied Word layout or a built-in style, select a coordinated color theme, hide sections, and generate your PDF. Template and theme choices are included in JSON profiles.
 
 Use the Continue button to move forward, or Skip AI and preview when you prefer manual writing. You can return to any step using the three-item sidebar. The last editing section is remembered. Writing preferences remain separate from resume data and are not exported with candidate profiles. No API request is triggered by navigating between steps.
 
